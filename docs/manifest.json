@@ -1,0 +1,141 @@
+{
+  "src/assets/practico-logo-black.svg": {
+    "file": "assets/practico-logo-black.164f07f2.svg",
+    "src": "src/assets/practico-logo-black.svg"
+  },
+  "src/assets/phone.png": {
+    "file": "assets/phone.ef0014df.png",
+    "src": "src/assets/phone.png"
+  },
+  "src/assets/practico-logo-white.svg": {
+    "file": "assets/practico-logo-white.0d7a3342.svg",
+    "src": "src/assets/practico-logo-white.svg"
+  },
+  "src/assets/rating.png": {
+    "file": "assets/rating.e238a66f.png",
+    "src": "src/assets/rating.png"
+  },
+  "src/assets/icon-store.svg": {
+    "file": "assets/icon-store.a0fef55d.svg",
+    "src": "src/assets/icon-store.svg"
+  },
+  "src/assets/icon-burger-black.svg": {
+    "file": "assets/icon-burger-black.6f6388b2.svg",
+    "src": "src/assets/icon-burger-black.svg"
+  },
+  "src/assets/icon-play.svg": {
+    "file": "assets/icon-play.0a826d3c.svg",
+    "src": "src/assets/icon-play.svg"
+  },
+  "src/assets/icon-arrow.svg": {
+    "file": "assets/icon-arrow.58ec7040.svg",
+    "src": "src/assets/icon-arrow.svg"
+  },
+  "src/assets/icon-check.svg": {
+    "file": "assets/icon-check.3f011bed.svg",
+    "src": "src/assets/icon-check.svg"
+  },
+  "src/assets/icon-close.svg": {
+    "file": "assets/icon-close.ef69f5bf.svg",
+    "src": "src/assets/icon-close.svg"
+  },
+  "src/assets/icon-burger.svg": {
+    "file": "assets/icon-burger.8f1b1b30.svg",
+    "src": "src/assets/icon-burger.svg"
+  },
+  "src/assets/icons.svg": {
+    "file": "assets/icons.c1cdb48b.svg",
+    "src": "src/assets/icons.svg"
+  },
+  "src/assets/meditation-img.png": {
+    "file": "assets/meditation-img.c85e6ee0.png",
+    "src": "src/assets/meditation-img.png"
+  },
+  "index.html": {
+    "file": "assets/index.d2198660.js",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/views/QuizView.vue",
+      "src/views/SubmitView.vue",
+      "src/views/DownloadView.vue"
+    ],
+    "css": [
+      "assets/index.95eed95a.css"
+    ],
+    "assets": [
+      "assets/practico-logo-black.164f07f2.svg",
+      "assets/practico-logo-white.0d7a3342.svg",
+      "assets/rating.e238a66f.png",
+      "assets/icon-burger.8f1b1b30.svg",
+      "assets/icon-store.a0fef55d.svg",
+      "assets/icon-play.0a826d3c.svg",
+      "assets/icon-close.ef69f5bf.svg",
+      "assets/icons.c1cdb48b.svg",
+      "assets/meditation-img.c85e6ee0.png"
+    ]
+  },
+  "src/views/QuizView.vue": {
+    "file": "assets/QuizView.5120ea5d.js",
+    "src": "src/views/QuizView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ],
+    "css": [
+      "assets/QuizView.103e48b3.css"
+    ],
+    "assets": [
+      "assets/icon-arrow.58ec7040.svg",
+      "assets/icon-check.3f011bed.svg",
+      "assets/icon-burger-black.6f6388b2.svg"
+    ]
+  },
+  "src/views/SubmitView.vue": {
+    "file": "assets/SubmitView.9a4d0db2.js",
+    "src": "src/views/SubmitView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ],
+    "css": [
+      "assets/SubmitView.59abbd91.css"
+    ],
+    "assets": [
+      "assets/icon-burger-black.6f6388b2.svg"
+    ]
+  },
+  "src/views/DownloadView.vue": {
+    "file": "assets/DownloadView.343398d3.js",
+    "src": "src/views/DownloadView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ],
+    "css": [
+      "assets/DownloadView.8a5216ce.css"
+    ],
+    "assets": [
+      "assets/phone.ef0014df.png",
+      "assets/icon-burger-black.6f6388b2.svg",
+      "assets/icon-store.a0fef55d.svg",
+      "assets/icon-play.0a826d3c.svg"
+    ]
+  },
+  "index.css": {
+    "file": "assets/index.95eed95a.css",
+    "src": "index.css"
+  },
+  "src/views/SubmitView.css": {
+    "file": "assets/SubmitView.59abbd91.css",
+    "src": "src/views/SubmitView.css"
+  },
+  "src/views/DownloadView.css": {
+    "file": "assets/DownloadView.8a5216ce.css",
+    "src": "src/views/DownloadView.css"
+  },
+  "src/views/QuizView.css": {
+    "file": "assets/QuizView.103e48b3.css",
+    "src": "src/views/QuizView.css"
+  }
+}
