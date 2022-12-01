@@ -19,24 +19,24 @@
     "file": "assets/icon-store.a0fef55d.svg",
     "src": "src/assets/icon-store.svg"
   },
-  "src/assets/icon-arrow.svg": {
-    "file": "assets/icon-arrow.58ec7040.svg",
-    "src": "src/assets/icon-arrow.svg"
+  "src/assets/icon-play.svg": {
+    "file": "assets/icon-play.0a826d3c.svg",
+    "src": "src/assets/icon-play.svg"
   },
   "src/assets/icon-burger-black.svg": {
     "file": "assets/icon-burger-black.6f6388b2.svg",
     "src": "src/assets/icon-burger-black.svg"
   },
-  "src/assets/icon-play.svg": {
-    "file": "assets/icon-play.0a826d3c.svg",
-    "src": "src/assets/icon-play.svg"
-  },
   "src/assets/icon-check.svg": {
     "file": "assets/icon-check.3f011bed.svg",
     "src": "src/assets/icon-check.svg"
   },
+  "src/assets/icon-arrow.svg": {
+    "file": "assets/icon-arrow.58ec7040.svg",
+    "src": "src/assets/icon-arrow.svg"
+  },
   "src/assets/icon-burger.svg": {
-    "file": "assets/icon-burger.8f1b1b30.svg",
+    "file": "assets/icon-burger.897ee8d9.svg",
     "src": "src/assets/icon-burger.svg"
   },
   "src/assets/icon-close.svg": {
@@ -52,7 +52,7 @@
     "src": "src/assets/icons.svg"
   },
   "index.html": {
-    "file": "assets/index.748f961b.js",
+    "file": "assets/index.8a62def0.js",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
@@ -61,13 +61,13 @@
       "src/views/DownloadView.vue"
     ],
     "css": [
-      "assets/index.f5c06af1.css"
+      "assets/index.cbac37b2.css"
     ],
     "assets": [
       "assets/practico-logo-black.164f07f2.svg",
       "assets/practico-logo-white.0d7a3342.svg",
       "assets/rating.e238a66f.png",
-      "assets/icon-burger.8f1b1b30.svg",
+      "assets/icon-burger.897ee8d9.svg",
       "assets/icon-store.a0fef55d.svg",
       "assets/icon-play.0a826d3c.svg",
       "assets/icon-close.ef69f5bf.svg",
@@ -76,7 +76,7 @@
     ]
   },
   "src/views/QuizView.vue": {
-    "file": "assets/QuizView.2948a791.js",
+    "file": "assets/QuizView.65e4e75a.js",
     "src": "src/views/QuizView.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -92,7 +92,7 @@
     ]
   },
   "src/views/SubmitView.vue": {
-    "file": "assets/SubmitView.963cb58c.js",
+    "file": "assets/SubmitView.e2396a19.js",
     "src": "src/views/SubmitView.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -106,7 +106,7 @@
     ]
   },
   "src/views/DownloadView.vue": {
-    "file": "assets/DownloadView.1fac3ed4.js",
+    "file": "assets/DownloadView.801d10a0.js",
     "src": "src/views/DownloadView.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -126,10 +126,6 @@
     "file": "assets/DownloadView.d29029b4.css",
     "src": "src/views/DownloadView.css"
   },
-  "index.css": {
-    "file": "assets/index.f5c06af1.css",
-    "src": "index.css"
-  },
   "src/views/SubmitView.css": {
     "file": "assets/SubmitView.1047a3e7.css",
     "src": "src/views/SubmitView.css"
@@ -137,5 +133,9 @@
   "src/views/QuizView.css": {
     "file": "assets/QuizView.b6d5df66.css",
     "src": "src/views/QuizView.css"
+  },
+  "index.css": {
+    "file": "assets/index.cbac37b2.css",
+    "src": "index.css"
   }
 }
