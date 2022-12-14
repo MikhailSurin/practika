@@ -5,16 +5,16 @@
       <img class="burger-modal__logo" src="../assets/practico-logo-black.svg" alt="Practico logo">
       <ul class="burger-modal__nav-list">
         <li class="burger-modal__nav-item">
-          <a class="burger-modal__external-link" href="#">License Agreement</a>
+          <a class="burger-modal__external-link" href="https://www.praktika.app/license">License Agreement</a>
         </li>
         <li class="burger-modal__nav-item">
-          <a class="burger-modal__external-link" href="#">Privacy Policy</a>
+          <a class="burger-modal__external-link" href="https://www.praktika.app/privacy-policy">Privacy Policy</a>
         </li>
         <li class="burger-modal__nav-item">
-          <a class="burger-modal__external-link" href="#">Practico Website</a>
+          <a class="burger-modal__external-link" href="https://www.praktika.app/">Practico Website</a>
         </li>
         <li class="burger-modal__nav-item">
-          <a class="burger-modal__external-link" href="#">Contact Us</a>
+          <a class="burger-modal__external-link" href="mailto:hi@praktika.app">Contact Us</a>
         </li>
       </ul>
       <p class="burger-modal__copyright">
@@ -24,12 +24,12 @@
       </p>
       <ul class="burger-modal__store-list">
         <li class="burger-modal__store-item">
-          <a class="burger-modal__store-link" href="#">
+          <a class="burger-modal__store-link" href="https://apps.apple.com/ru/app/meditation-sleep-praktika/id1467786415?l=en">
             <span class="burger-modal__link-text visually-hidden">Download on the App Store</span>
           </a>
         </li>
         <li class="burger-modal__store-item">
-          <a class="burger-modal__play-link" href="#">
+          <a class="burger-modal__play-link" href="https://play.google.com/store/apps/details?id=com.praktika.app">
             <span class="burger-modal__link-text visually-hidden">Get it on Google Play</span>
           </a>
         </li>
@@ -189,7 +189,7 @@ export default {
 }
 
 .burger-modal__store-list {
-  margin: auto 0 200px;
+  margin: auto 0 25px;
   padding: 0;
   min-width: 330px;
   display: flex;

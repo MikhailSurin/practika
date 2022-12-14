@@ -14,12 +14,12 @@
       <app-company-info class="main-page__company-info" />
       <ul class="main-page__store-list">
         <li class="main-page__store-item">
-          <a class="main-page__store-link" href="#">
+          <a class="main-page__store-link" href="https://apps.apple.com/ru/app/meditation-sleep-praktika/id1467786415?l=en">
             <span class="main-page__link-text visually-hidden">Download on the App Store</span>
           </a>
         </li>
         <li class="main-page__store-item">
-          <a class="main-page__play-link" href="#">
+          <a class="main-page__play-link" href="https://play.google.com/store/apps/details?id=com.praktika.app">
             <span class="main-page__link-text visually-hidden">Get it on Google Play</span>
           </a>
         </li>
@@ -87,7 +87,7 @@ export default {
 
   box-sizing: border-box;
   margin: 0;
-  padding: 25px 45px 40px;
+  padding: 25px 45px;
   display: flex;
   flex-direction: column;
   justify-content: center;

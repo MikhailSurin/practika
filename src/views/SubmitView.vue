@@ -23,7 +23,7 @@
         <input class="submit-page__input" type="email" name="email" placeholder="Enter your email" required>
         <span class="submit-page__hint">
           By submitting this data, you accept the<br>
-          <a href="#">user agreement</a> and <a href="#">privacy policy</a>
+          <a href="https://www.praktika.app/license">user agreement</a> and <a href="https://www.praktika.app/privacy-policy">privacy policy</a>
         </span>
         <div class="submit-page__button-wrapper">
           <app-button

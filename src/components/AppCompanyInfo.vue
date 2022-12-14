@@ -3,16 +3,16 @@
     <div class="company-info__inner">
       <ul class="company-info_links-list">
         <li class="company-info__links-item">
-          <a class="company-info__link" href="#">License Agreement</a>
+          <a class="company-info__link" href="https://www.praktika.app/license">License Agreement</a>
         </li>
         <li class="company-info__links-item">
-          <a class="company-info__link" href="#">Privacy Policy</a>
+          <a class="company-info__link" href="https://www.praktika.app/privacy-policy">Privacy Policy</a>
         </li>
         <li class="company-info__links-item">
-          <a class="company-info__link" href="#">Practico Website</a>
+          <a class="company-info__link" href="https://www.praktika.app/">Practico Website</a>
         </li>
         <li class="company-info__links-item">
-          <a class="company-info__link" href="#">Contact Us</a>
+          <a class="company-info__link" href="mailto:hi@praktika.app">Contact Us</a>
         </li>
       </ul>
       <b class="company-info__copyright">

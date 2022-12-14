@@ -22,12 +22,12 @@
       <div class="download-page__links-wrapper">
         <ul class="download-page__links-list">
           <li class="download-page__links-item">
-            <a class="download-page__store-link" href="#">
+            <a class="download-page__store-link" href="https://apps.apple.com/ru/app/meditation-sleep-praktika/id1467786415?l=en">
               <span class="download-page__link-text visually-hidden">Download on the App Store</span>
             </a>
           </li>
           <li class="download-page__links-item">
-            <a class="download-page__play-link" href="#">
+            <a class="download-page__play-link" href="https://play.google.com/store/apps/details?id=com.praktika.app">
               <span class="download-page__link-text visually-hidden">Get it on Google Play</span>
             </a>
           </li>
@@ -143,7 +143,7 @@ export default {
 
   box-sizing: border-box;
   margin: 55px 0 0;
-  padding: 30px 22px 40px;
+  padding: 25px 22px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
