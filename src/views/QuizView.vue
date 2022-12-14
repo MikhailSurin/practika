@@ -884,6 +884,7 @@ export default {
   border: 1px solid #E5E5EA;
   background: #E5E5EA;
   border-radius: 10px;
+  cursor: pointer;
 
   transition: all 0.2s ease-in-out;
 }
