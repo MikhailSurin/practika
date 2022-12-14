@@ -98,11 +98,6 @@ export default {
   align-items: center;
 }
 
-.quiz-page__logo {
-  margin: 33px 0;
-  padding: 0;
-}
-
 .submit-page__burger-button {
   position: absolute;
   top: 20px;

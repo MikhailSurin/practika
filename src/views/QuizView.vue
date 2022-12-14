@@ -91,7 +91,7 @@
           {{ step.selected ? step.text + '...' : step.text }}
         </li>
       </ul>
-      <app-company-info class="quiz-page__company-info" />
+      <app-company-info class="quiz-page__company-info" v-if="showQuiz" />
     </main>
   </div>
 </template>
@@ -731,12 +731,14 @@ export default {
   align-items: center;
 }
 
-.quiz-page__logo {
-  margin: 0 auto;
-}
 
 .quiz-page__main-content {
   flex-grow: 1;
+}
+
+.quiz-page__logo {
+  margin: 33px auto;
+  padding: 0;
 }
 
 .quiz-page__back-button {

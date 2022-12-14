@@ -193,12 +193,18 @@ export default {
 .download-page__company-info {
   margin: 140px 0 140px;
   padding: 0 20px;
+
+  display: none;
 }
 
 @media screen and (min-width: 748px) {
   .download-page__burger-button,
   .download-page__burger-modal {
     display: none;
+  }
+
+  .download-page__company-info {
+    display: flex;
   }
 }
 
