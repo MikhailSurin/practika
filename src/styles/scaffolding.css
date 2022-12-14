@@ -30,7 +30,7 @@ body {
 }
 
 /* Скрываем scrollbar для Chrome, Safari и Opera */
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
 
