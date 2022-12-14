@@ -19,8 +19,12 @@
         you now! Leave your<br>
         email to get a link
       </p>
-      <form action="#" @submit="submitHandler">
+      <form class="submit-page__form" action="#" @submit="submitHandler">
         <input class="submit-page__input" type="email" name="email" placeholder="Enter your email" required>
+        <span class="submit-page__hint">
+          By submitting this data, you accept the<br>
+          <a href="#">user agreement</a> and <a href="#">privacy policy</a>
+        </span>
         <div class="submit-page__button-wrapper">
           <app-button
             class="submit-page__submit-button"
@@ -29,10 +33,6 @@
           />
         </div>
       </form>
-      <span class="submit-page__hint">
-        By submitting this data, you accept the<br>
-        user agreement and privacy policy
-      </span>
     </main>
   </div>
 </template>
@@ -140,6 +140,13 @@ export default {
   color: #000000;
 }
 
+.submit-page__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .submit-page__input {
   box-sizing: border-box;
   width: 270px;
@@ -168,6 +175,10 @@ export default {
   color: #A3A3A3;
 }
 
+.submit-page__hint a {
+  color: #A3A3A3;
+}
+
 .submit-page__button-wrapper {
   position: fixed;
   bottom: 0;
@@ -190,6 +201,17 @@ export default {
   .submit-page__burger-button,
   .submit-page__burger-modal {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .submit-page__button-wrapper {
+    position: unset;
+
+    margin: 40px 0 0;
+    padding: 0;
+
+    box-shadow: none;
   }
 }
 </style>

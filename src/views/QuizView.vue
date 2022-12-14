@@ -709,6 +709,7 @@ export default {
   padding: 20px 45px 120px;
   width: 100%;
   max-width: 720px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -722,11 +723,20 @@ export default {
   margin: 0;
   padding: 0;
   width: 100%;
+  max-width: 460px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.quiz-page__logo {
+  margin: 0 auto;
+}
+
+.quiz-page__main-content {
+  flex-grow: 1;
 }
 
 .quiz-page__back-button {
@@ -737,6 +747,7 @@ export default {
 
   background: url('../assets/icon-arrow.svg') center no-repeat;
   border: none;
+  cursor: pointer;
 }
 
 .quiz-page__progress {
@@ -777,6 +788,8 @@ export default {
   margin: 10px 0 0;
   padding: 0;
   width: 100%;
+  max-width: 460px;
+  align-self: center;
   height: 5px;
 
   background: #E5E5EA;
@@ -799,6 +812,7 @@ export default {
 }
 
 .quiz__title {
+  max-width: 300px;
   margin: 30px 0 0;
   padding: 0;
   align-self: center;
@@ -807,12 +821,14 @@ export default {
   font-style: normal;
   font-size: 25px;
   line-height: 30px;
+  text-align: center;
   color: #000000;
 }
 
 .quiz__hint {
   margin: 15px 0 0;
   padding: 0;
+  max-width: 300px;
   align-self: center;
 
   font-weight: 400;
@@ -824,9 +840,11 @@ export default {
 }
 
 .quiz__list {
-  margin: 30px 0 0;
+  margin: 30px 0 40px;
   padding: 0;
   width: 100%;
+  max-width: 460px;
+  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -884,7 +902,7 @@ export default {
 }
 
 .quiz-page__company-info {
-  margin-top: 60px;
+  margin-top: auto;
   margin-bottom: 20px;
 }
 
@@ -926,6 +944,7 @@ export default {
   margin: 55px 0 0;
   padding: 0;
   width: 100%;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -952,7 +971,7 @@ export default {
 }
 
 .quiz-page__steps-list {
-  margin: 50px 0 0;
+  margin: 50px 0 40px;
   padding: 0;
   width: 100%;
   display: flex;
@@ -994,9 +1013,29 @@ export default {
     padding-bottom: 0;
   }
 
+  .quiz-page__progress {
+    margin: 0 0 0 auto;
+  }
+
+  .quiz__list {
+    margin-bottom: 0;
+  }
+
+  .quiz-page__header {
+    justify-content: flex-start;
+  }
+
+  .quiz-page__logo {
+    margin: 0 0 0 152px;
+  }
+
+  .quiz-page__burger-button {
+    display: none;
+  }
+
   .quiz__button-wrapper {
     position: unset;
-    margin: 50px auto 0;
+    margin: 50px auto 40px;
     padding: 0;
     box-shadow: none;
   }
