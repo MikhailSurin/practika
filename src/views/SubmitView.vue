@@ -200,6 +200,10 @@ export default {
 }
 
 @media screen and (min-width: 1280px) {
+  .submit-page__header .quiz-page__logo {
+    margin: 33px auto;
+  }
+
   .submit-page__button-wrapper {
     position: unset;
 
