@@ -127,7 +127,7 @@ export default {
 
 .submit-page__burger-button {
   position: absolute;
-  top: 20px;
+  top: calc(50% - 20px);
   right: 40px;
 
   margin: 0;

@@ -706,7 +706,7 @@ export default {
 .quiz-page {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 20px 45px 120px;
+  padding: 0 45px 120px;
   width: 100%;
   max-width: 720px;
   height: 100vh;
@@ -1031,7 +1031,7 @@ export default {
   }
 
   .quiz-page__logo {
-    margin: 0 0 0 152px;
+    margin: 33px 0 33px 152px;
   }
 
   .quiz-page__burger-button {
