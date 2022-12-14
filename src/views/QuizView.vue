@@ -793,6 +793,7 @@ export default {
   max-width: 460px;
   align-self: center;
   height: 5px;
+  min-height: 5px;
 
   background: #E5E5EA;
   border-radius: 3px;
@@ -807,6 +808,7 @@ export default {
 
   display: block;
   width: var(--line-width);
+  height: 5px;
 
   background: linear-gradient(270deg, #01D9D7 0%, #01A5D9 100%);
   border-radius: 3px;
