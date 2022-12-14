@@ -122,7 +122,6 @@ export default {
   margin: 0;
   padding: 0;
   width: 100%;
-  max-width: 390px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -136,7 +135,7 @@ export default {
 
 .burger-modal__inner--closing {
   transition: transform 0.2s linear;
-  transform: translateX(500px);
+  transform: translateX(700px);
 }
 
 .burger-modal__logo {
