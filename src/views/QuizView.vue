@@ -2,7 +2,7 @@
   <div class="quiz-page">
     <header class="quiz-page__header">
       <h2 class="quiz-page__heading visually-hidden">Short quiz</h2>
-      <button class="quiz-page__back-button">
+      <button class="quiz-page__back-button" @click="stepBackButtonClickHandler">
         <span class="quiz-page__button-text visually-hidden">Go back</span>
       </button>
       <img class="quiz-page__logo" src="../assets/practico-logo-black.svg" alt="practico" width="75" height="15">
@@ -652,6 +652,7 @@ export default {
         const index = this.currentQuestionData.userAnswer.findIndex(answer => answer === event.target.name)
         this.currentQuestionData.userAnswer.splice(index, 1)
       }
+      console.log(this.currentQuestionData.userAnswer)
     },
     nextButtonClickHandler() {
       if (this.currentStep < this.quiz.length) {
@@ -669,6 +670,14 @@ export default {
     closeModalEventHandler() {
       this.showModal = !this.showModal
       document.body.classList.toggle('lock')
+    },
+    stepBackButtonClickHandler() {
+      if (this.currentStep > 1) {
+        // Clear data in current step and in prev step
+        this.currentQuestionData.userAnswer = []
+        this.currentStep--
+        this.currentQuestionData.userAnswer = []
+      }
     },
     percentChangeHandler(percent) {
       console.log(percent)
