@@ -8,7 +8,7 @@
     <span class="app-desc__author">
       by David K, US
     </span>
-    <img class="app-desc__rating" src="../assets/rating.png" alt="App rating" width="152" height="25">
+    <img class="app-desc__rating" src="../assets/rating-big.png" alt="App rating" width="152" height="25">
   </section>
 </template>
 

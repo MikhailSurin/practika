@@ -56,6 +56,17 @@ export default {
   animation: float 3s infinite ease-in-out;
 }
 
+@media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi)  {
+  .keyvisual::after {
+    background: url('../assets/meditation-img-4x.jpg') center no-repeat;
+    background-size: 120px 120px;
+  }
+}
+
 .keyvisual__text {
   margin: 60px 0 0;
   padding: 0;

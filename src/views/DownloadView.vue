@@ -18,7 +18,7 @@
         Download Practico now<br>
         to begin your journey
       </p>
-      <img class="download-page__phone" src="../assets/phone.png" alt="Practico application" width="250" height="505">
+      <img class="download-page__phone" src="../assets/phone-big.png" alt="Practico application" width="250" height="505">
       <div class="download-page__links-wrapper">
         <ul class="download-page__links-list">
           <li class="download-page__links-item">
