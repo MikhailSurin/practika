@@ -63,7 +63,34 @@ export default {
     },
     submitHandler(event) {
       event.preventDefault()
-      this.$router.push('/download')
+
+      const formData = new FormData(event.target)
+      const email = formData.get('email')
+      this.fetchNewEmail(email)
+    },
+
+    fetchNewEmail(email) {
+      console.log(email)
+      const url = 'https://service-api.praktika.app/api/email/add'
+
+      fetch(url, {
+        mode: 'no-cors',
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        method: "POST",
+        body: JSON.stringify({'email': email})
+      })
+        .then(response => response.json())
+        .then(status => {
+          console.log(status)
+          this.$router.push('/download')
+        })
+        .catch(e => {
+          console.warn(e)
+        })
     },
   },
 }
