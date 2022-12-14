@@ -46,7 +46,7 @@
         </li>
       </ul>
 
-      <ul class="quiz__list" v-else>
+      <ul class="quiz__list" v-if="currentQuestionData.type === 'checkbox'">
         <li class="quiz__item" v-for="answer in currentQuestionData.answers" :key="answer.id">
           <input
             class="quiz__input visually-hidden"
@@ -62,7 +62,7 @@
       <div class="quiz__button-wrapper">
         <app-button
           class="quiz__apply-button"
-          text="Next step"
+          :text="currentStep === 15 ? 'I understand' : 'Next step' "
           :disabled="currentQuestionData.userAnswer === null || currentQuestionData.userAnswer.length === 0"
           @click="nextButtonClickHandler"
         />
@@ -594,22 +594,22 @@ export default {
           question: 13,
           title: 'Do you have any medical conditions?',
           hint: 'If you’ve been diagnosed with any physical or mental health issues, please consult your doctor before you proceed.',
-          type: 'radio',
+          type: 'none',
           answers: [
-            {
-              text: 'Yes',
-              id: 63,
-              name: 'medical_conditions',
-              value: 'Yes',
-            },
-            {
-              text: 'No',
-              id: 64,
-              name: 'medical_conditions',
-              value: 'No',
-            },
+            // {
+            //   text: 'Yes',
+            //   id: 63,
+            //   name: 'medical_conditions',
+            //   value: 'Yes',
+            // },
+            // {
+            //   text: 'No',
+            //   id: 64,
+            //   name: 'medical_conditions',
+            //   value: 'No',
+            // },
           ],
-          userAnswer: [],
+          userAnswer: ['I understand'],
         },
       ],
       steps: [
@@ -674,7 +674,9 @@ export default {
     stepBackButtonClickHandler() {
       if (this.currentStep > 1) {
         // Clear data in current step and in prev step
-        this.currentQuestionData.userAnswer = []
+        if (this.currentStep < 15) {
+          this.currentQuestionData.userAnswer = []
+        }
         this.currentStep--
         this.currentQuestionData.userAnswer = []
       }
