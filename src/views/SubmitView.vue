@@ -70,18 +70,15 @@ export default {
     },
 
     fetchNewEmail(email) {
-      console.log(email)
       const url = 'https://service-api.praktika.app/api/email/add'
 
       fetch(url, {
-        mode: 'no-cors',
+        mode: 'cors',
         headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
         method: "POST",
-        body: JSON.stringify({'email': email})
+        body: JSON.stringify({email: email})
       })
         .then(response => response.json())
         .then(status => {
