@@ -1,8 +1,8 @@
-import { createRouter, createWebHashHistory} from 'vue-router'
+import { createRouter, createWebHistory} from 'vue-router'
 import MainPageView from '../views/MainPageView.vue'
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.VITE_APP_BASE_PATH),
+  history: createWebHistory(import.meta.env.VITE_APP_BASE_PATH),
   routes: [
     {
       path: '/',
@@ -26,6 +26,11 @@ const router = createRouter({
       path: '/download',
       name: 'download',
       component: () => import('../views/DownloadView.vue')
+    },
+    {
+      path: '/unsubscribe/:pathMatch(.*)*',
+      name: 'unsubscribe',
+      component: () => import('../views/UnsubscribeView.vue')
     },
   ]
 })
