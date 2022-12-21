@@ -67,6 +67,10 @@ export default {
       const formData = new FormData(event.target)
       const email = formData.get('email')
       this.fetchNewEmail(email)
+
+      gtag('event', 'email_send', {
+        email: email
+      })
     },
 
     fetchNewEmail(email) {
