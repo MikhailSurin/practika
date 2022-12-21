@@ -656,6 +656,14 @@ export default {
     },
     nextButtonClickHandler() {
       if (this.currentStep < this.quiz.length) {
+        if (this.currentStep === 1) {
+          console.log('Debug for 1 question')
+          console.log('Sending analytics')
+          gtag('event', 'question_1', {
+            answer: this.quiz[this.currentStep].userAnswer
+          })
+        }
+
         this.currentStep++
       } else {
         this.showQuiz = false
