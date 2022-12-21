@@ -643,7 +643,6 @@ export default {
   methods: {
     radioButtonChangeHandler(event) {
       this.currentQuestionData.userAnswer = event.target.value
-      console.log(this.currentQuestionData.userAnswer)
     },
     checkboxChangeHandler(event) {
       if (event.target.checked) {
@@ -652,25 +651,23 @@ export default {
         const index = this.currentQuestionData.userAnswer.findIndex(answer => answer === event.target.name)
         this.currentQuestionData.userAnswer.splice(index, 1)
       }
-      console.log(this.currentQuestionData.userAnswer)
     },
     nextButtonClickHandler() {
       if (this.currentStep < this.quiz.length) {
-        if (this.currentStep === 1) {
-          console.log('Debug for 1 question')
-          console.log('Sending analytics')
-          gtag('event', 'question_1', {
-            answer: this.quiz[this.currentStep].userAnswer
-          })
-        }
+        const eventName = `question_${this.currentStep}`
+        const userAnswer = this.quiz[this.currentStep - 1].userAnswer
+
+        gtag('event', eventName, {
+          answer: userAnswer,
+        })
 
         this.currentStep++
       } else {
         this.showQuiz = false
         this.showLoader = true
 
-        gtag('event', 'form_send', {
-          quiz: this.quiz
+        gtag('event', 'question_15', {
+          answer: 'I understand',
         })
       }
     },
