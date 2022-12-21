@@ -658,9 +658,12 @@ export default {
       if (this.currentStep < this.quiz.length) {
         this.currentStep++
       } else {
-        console.log('Сабмит')
         this.showQuiz = false
         this.showLoader = true
+
+        gtag('event', 'form_send', {
+          quiz: this.quiz
+        })
       }
     },
     burgerButtonClickHandler() {
