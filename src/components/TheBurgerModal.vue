@@ -24,12 +24,20 @@
       </p>
       <ul class="burger-modal__store-list">
         <li class="burger-modal__store-item">
-          <a class="burger-modal__store-link" href="https://apps.apple.com/ru/app/meditation-sleep-praktika/id1467786415?l=en">
+          <a
+            class="burger-modal__store-link"
+            href="https://apps.apple.com/ru/app/meditation-sleep-praktika/id1467786415?l=en"
+            @click="burgerStoreClickHandler"
+          >
             <span class="burger-modal__link-text visually-hidden">Download on the App Store</span>
           </a>
         </li>
         <li class="burger-modal__store-item">
-          <a class="burger-modal__play-link" href="https://play.google.com/store/apps/details?id=com.praktika.app">
+          <a
+            class="burger-modal__play-link"
+            href="https://play.google.com/store/apps/details?id=com.praktika.app"
+            @click="burgerPlayClickHandler"
+          >
             <span class="burger-modal__link-text visually-hidden">Get it on Google Play</span>
           </a>
         </li>
@@ -58,6 +66,16 @@ export default {
       setTimeout(() => {
         this.$emit('closeModalEvent')
       }, 500)
+    },
+    burgerStoreClickHandler() {
+      gtag('event', 'ios_burger', {
+        click: true,
+      })
+    },
+    burgerPlayClickHandler() {
+      gtag('event', 'gp_burger', {
+        click: true,
+      })
     },
   },
 }
